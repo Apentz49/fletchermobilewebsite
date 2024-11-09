@@ -1,0 +1,331 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #dddddd;
+    background: linear-gradient(135deg, #111111, #1c1c1c);
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #2ECC71;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Header Title */
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Header Tagline */
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+}
+
+/* Header Divider */
+.header-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+/* Main Content Container */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+#about, #services, #service-area, #contact {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Section Headings */
+h2 {
+    color: #2ECC71;
+    font-weight: bold;
+    border-bottom: 2px solid #2ECC71;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+    color: #2ECC71;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+/* Contact Form */
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #2ECC71;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#contact form button {
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #27AE60;
+}
+
+/* Button Styling */
+button {
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27AE60;
+}
+
+/* Highlighted Link for Service Call Fee */
+.highlight-link {
+    color: #2ECC71;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.highlight-link:hover {
+    color: #27AE60;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: #cccccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #2ECC71;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #27AE60;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #111111;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #2ECC71;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #27AE60;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #2ECC71;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 30px 0;
+}
+
+.cta-section button {
+    background-color: #111111;
+    color: #2ECC71;
+    border: 2px solid #2ECC71;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-section button:hover {
+    background-color: #2ECC71;
+    color: #111111;
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Map Styling */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        background: linear-gradient(150deg, 
+            #1a5f2b 0%, 
+            #1a5f2b 30%, 
+            rgba(26, 95, 43, 0.8) 30.5%, 
+            rgba(26, 95, 43, 0) 31%, 
+            #2ECC71 31%, 
+            #2ECC71 100%
+        );
+        padding: 30px 15px;
+    }
+
+    header::before {
+        right: 70%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .header-divider {
+        width: 90%;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background: linear-gradient(150deg, 
+            #1a5f2b 0%, 
+            #1a5f2b 35%, 
+            rgba(26, 95, 43, 0.8) 35.5%, 
+            rgba(26, 95, 43, 0) 36%, 
+            #2ECC71 36%, 
+            #2ECC71 100%
+        );
+        padding: 20px 10px;
+    }
+
+    header::before {
+        right: 65%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+}

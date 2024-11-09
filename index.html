@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fletcher DrivePro Mobile</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <!-- Header Title and Tagline -->
+            <h1>Fletcher DrivePro Mobile</h1>
+            <p>On-Demand Repairs, Engineered for Excellence</p>
+            <div class="header-divider"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Us Section with Icon -->
+        <section id="about" class="fade-in">
+            <h2><i class="fas fa-info-circle"></i> About Us</h2>
+            <p>At Fletcher DrivePro Mobile, we believe that great service starts with transparency. Our commitment to honest, upfront pricing and clear communication means you'll know exactly what to expect—no surprises, no hidden fees. We bring a precision-engineered approach to every job, from diagnostics to delivery, ensuring you have confidence in every step of the process.</p>
+            <p>With us, you're not just a customer; you're a part of our journey to elevate mobile repair services. We fuse technical expertise with a dedication to integrity, so you can make informed decisions with confidence and peace of mind.</p>
+        </section>
+
+        <!-- Our Services Section with Icon -->
+        <section id="services" class="fade-in">
+            <h2><i class="fas fa-tools"></i> Our Services</h2>
+            <p>At Fletcher DrivePro Mobile, we provide reliable and convenient mobile mechanic services right where you need them. Our team is equipped to handle a range of automotive needs, from diagnostics to repairs, ensuring that you're back on the road as quickly as possible. With transparent pricing and clear communication, you can trust us to deliver high-quality service without surprises.</p>
+
+            <h3>Service Pricing</h3>
+            <p>We believe in straightforward pricing for all our services. Below is a list of some of our most common services and their costs. Please note that listed prices do not include the <a href="#service-call-fees" class="highlight-link">standard service call fee</a>.</p>
+
+            <ul>
+                <li><strong>Diagnostics and Inspection</strong> - $50 (includes basic diagnostic check and inspection of major systems)</li>
+                <li><strong>Oil Change</strong> - $75 (includes oil and filter replacement; additional cost for synthetic oil)</li>
+                <li><strong>Battery Replacement</strong> - $100 (includes installation and disposal of old battery)</li>
+                <li><strong>Brake Service</strong> - $150 per axle (includes pad replacement and rotor inspection)</li>
+                <li><strong>Starter or Alternator Replacement</strong> - Starting at $150 (cost may vary depending on vehicle make and model)</li>
+                <li><strong>Tire Replacement and Rotation</strong> - $80 (includes tire rotation or replacement with customer-provided tires)</li>
+                <li><strong>Emergency Roadside Assistance</strong> - $120 (includes jump-start, tire change, or minor roadside repairs)</li>
+            </ul>
+
+            <p>For any other services or custom requests, please <a href="#contact">contact us</a> for a free quote. Our pricing is always upfront, and we'll keep you informed every step of the way.</p>
+        </section> 
+
+        <!-- Contact Us Section with Icon -->
+        <section id="contact" class="fade-in">
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <p>Have a question or need a quote? Get in touch below!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Service Call Fees Section with Icon -->
+        <section id="service-call-fees" class="fade-in">
+            <h2><i class="fas fa-map-marker-alt"></i> Service Call Fees</h2>
+            <p>Our service call fees are based on your location within our coverage area. Here's the breakdown:</p>
+            <ul>
+                <li><strong>0-5 miles:</strong> $20</li>
+                <li><strong>5-10 miles:</strong> $35</li>
+                <li><strong>10-20 miles:</strong> $50</li>
+            </ul>
+        </section>
+
+        <!-- Service Area Section -->
+        <section id="service-area" class="fade-in">
+            <h2><i class="fas fa-map"></i> Our Service Area</h2>
+            <p>Check if you're within our coverage area!</p>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section fade-in">
+            <p>Ready to experience top-quality mobile repair? Schedule your service today!</p>
+            <button onclick="window.location.href='#contact'">Get Started</button>
+        </section>
+    </main>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <p>&copy; 2024 Fletcher DrivePro Mobile</p>
+        <p>Connect with us:</p>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:contact@fletcherdrivepromobile.com"><i class="fas fa-envelope"></i></a>
+    </footer>
+
+    <!-- JavaScript for Google Maps API -->
+    <script src="script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfKHeOmPUYMNjRCkvAARTuGLTx9rWQMJw&callback=initMap&mapIds=74d831cea013c3ca&libraries=maps,marker">
+    </script>
+</body>
+</html>
+</html>
